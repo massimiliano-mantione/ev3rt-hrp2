@@ -29,6 +29,8 @@
 
 # System image
 uImage
+base-workspace/hrp2
+base-workspace/uImage
 
 # Build directories
 OBJ/
@@ -41,3 +43,8 @@ cfg/cfg/cfg
 
 # Exceptions
 !libusblib.a
+
+# GNU tags (global)
+GPATH
+GRTAGS
+GTAGS
