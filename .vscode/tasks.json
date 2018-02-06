@@ -9,7 +9,9 @@
             "options": {
                 "cwd": "${workspaceRoot}/sdk/workspace"
             },
-            "command": "make app=test-latency",
+            // "command": "make app=test-latency",
+            // "command": "make app=ev3-local-lib",
+            "command": "PATH=/home/massi/bin:\\$PATH; make app=ev3-local-lib",
             "presentation": {
                 "echo": true,
                 "reveal": "silent",
@@ -25,7 +27,7 @@
                     "owner": "c",
                     "fileLocation": [
                         "relative",
-                        "${workspaceRoot}/sdk/workspace/test-latency"
+                        "${workspaceRoot}/sdk/workspace/ev3-local-lib"
                     ],
                     "pattern": {
                         "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
@@ -40,7 +42,7 @@
                     "owner": "ld",
                     "fileLocation": [
                         "relative",
-                        "${workspaceRoot}/sdk/workspace/test-latency"
+                        "${workspaceRoot}/sdk/workspace/ev3-local-lib"
                     ],
                     "pattern": {
                         "regexp": "^(.*):\\(.+\\):\\s+(.*)$",
